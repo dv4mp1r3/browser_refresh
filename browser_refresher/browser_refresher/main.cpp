@@ -24,6 +24,7 @@ BOOL CALLBACK EnumWindowsProc(HWND hWindow, LPARAM lParam)
 
 int WINAPI wWinMain(__in HINSTANCE hInstance, __in_opt HINSTANCE hPrevInstance, __in LPWSTR lpCmdLine, __in int nShowCmd)
 {	
-	return EnumWindows(EnumWindowsProc, NULL);
+	EnumWindows(EnumWindowsProc, NULL);
+	return 0;
 }
 
